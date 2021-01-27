@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e0ee834957c343c6b740291cdb753cf2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_e0ee834957c343c6b740291cdb753cf2" ></div>
+        
+</body>
+<script>    
+    
+            var map_e0ee834957c343c6b740291cdb753cf2 = L.map(
+                "map_e0ee834957c343c6b740291cdb753cf2",
+                {
+                    center: [29.847986, -91.608168],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4454544831ca41b99ec16a86bc6769aa = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e0ee834957c343c6b740291cdb753cf2);
+        
+    
+            var marker_0b89079174984685b403cc5b5a9b3e4b = L.marker(
+                [30.982500076293945, -91.79833221435547],
+                {}
+            ).addTo(map_e0ee834957c343c6b740291cdb753cf2);
+        
+    
+            var icon_16f753e9bbe641f596b5fc269d196b7e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0b89079174984685b403cc5b5a9b3e4b.setIcon(icon_16f753e9bbe641f596b5fc269d196b7e);
+        
+    
+        var popup_b06b179f665d41269f6f9d384331f762 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_5bb1e8cfa1cb43a393e1c01970ff59e6 = $(`<div id="html_5bb1e8cfa1cb43a393e1c01970ff59e6" style="width: 100.0%; height: 100.0%;"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> <html> <body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><p align="center" style="margin-bottom: 0in; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>07381490</b></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Coordinates:</b><span style="font-weight: normal"> 30.9825 , -91.79833</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Max Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">697,000.0 cfs on 2011-05-23 11:45:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Min Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">39,700.0 cfs on 2012-08-29 20:45:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Basin: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Atchafalaya </span></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/raw/08080101_Atchafalaya/07381490.txt", target="_blank">Raw Data</a></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/processed/08080101_Atchafalaya/07381490.csv", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt">Processed Data</font></font></a></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><a href="http://htmlpreview.github.io/?https://github.com/sinaamini11/Louisiana_Region5_Discharges/blob/main/plots/08080101_Atchafalaya/07381490.html", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Plot</span></font></font></a></p> </body> </html> </div>`)[0];
+            popup_b06b179f665d41269f6f9d384331f762.setContent(html_5bb1e8cfa1cb43a393e1c01970ff59e6);
+        
+
+        marker_0b89079174984685b403cc5b5a9b3e4b.bindPopup(popup_b06b179f665d41269f6f9d384331f762)
+        ;
+
+        
+    
+    
+            marker_0b89079174984685b403cc5b5a9b3e4b.bindTooltip(
+                `<div>
+                     07381490
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b333e0e33374b978a1289c24801d8df = L.marker(
+                [29.697986602783203, -91.37288665771484],
+                {}
+            ).addTo(map_e0ee834957c343c6b740291cdb753cf2);
+        
+    
+            var icon_2c6d033f6fbe429a8d92e37ed57c7d6c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7b333e0e33374b978a1289c24801d8df.setIcon(icon_2c6d033f6fbe429a8d92e37ed57c7d6c);
+        
+    
+        var popup_4c80ee5ee4224181998ccebafe6ef059 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_46bbb2a80c7e449a92c31b5931109d7b = $(`<div id="html_46bbb2a80c7e449a92c31b5931109d7b" style="width: 100.0%; height: 100.0%;"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> <html> <body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><p align="center" style="margin-bottom: 0in; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>07381590</b></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Coordinates:</b><span style="font-weight: normal"> 29.697987 , -91.37289</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Max Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">323,000.0 cfs on 2011-05-27 15:15:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Min Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">-174,000.0 cfs on 2002-10-03 17:15:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Basin: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Atchafalaya </span></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/raw/08080101_Atchafalaya/07381590.txt", target="_blank">Raw Data</a></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/processed/08080101_Atchafalaya/07381590.csv", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt">Processed Data</font></font></a></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><a href="http://htmlpreview.github.io/?https://github.com/sinaamini11/Louisiana_Region5_Discharges/blob/main/plots/08080101_Atchafalaya/07381590.html", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Plot</span></font></font></a></p> </body> </html> </div>`)[0];
+            popup_4c80ee5ee4224181998ccebafe6ef059.setContent(html_46bbb2a80c7e449a92c31b5931109d7b);
+        
+
+        marker_7b333e0e33374b978a1289c24801d8df.bindPopup(popup_4c80ee5ee4224181998ccebafe6ef059)
+        ;
+
+        
+    
+    
+            marker_7b333e0e33374b978a1289c24801d8df.bindTooltip(
+                `<div>
+                     07381590
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ecf45f3145964fce989635dc236ee897 = L.marker(
+                [29.692819595336914, -91.2119369506836],
+                {}
+            ).addTo(map_e0ee834957c343c6b740291cdb753cf2);
+        
+    
+            var icon_e9b98f006f2145a6abc601bbd432f82f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ecf45f3145964fce989635dc236ee897.setIcon(icon_e9b98f006f2145a6abc601bbd432f82f);
+        
+    
+        var popup_0ed6acc30304452096f2f1f8a22ea117 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_1e1258ae29ba4d5fbd073289a9d05e09 = $(`<div id="html_1e1258ae29ba4d5fbd073289a9d05e09" style="width: 100.0%; height: 100.0%;"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> <html> <body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><p align="center" style="margin-bottom: 0in; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>07381600</b></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Coordinates:</b><span style="font-weight: normal"> 29.69282 , -91.21194</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Max Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">512,000.0 cfs on 2011-05-29 20:45:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Min Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">-151,000.0 cfs on 2002-10-03 18:00:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Basin: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Atchafalaya </span></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/raw/08080101_Atchafalaya/07381600.txt", target="_blank">Raw Data</a></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/processed/08080101_Atchafalaya/07381600.csv", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt">Processed Data</font></font></a></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><a href="http://htmlpreview.github.io/?https://github.com/sinaamini11/Louisiana_Region5_Discharges/blob/main/plots/08080101_Atchafalaya/07381600.html", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Plot</span></font></font></a></p> </body> </html> </div>`)[0];
+            popup_0ed6acc30304452096f2f1f8a22ea117.setContent(html_1e1258ae29ba4d5fbd073289a9d05e09);
+        
+
+        marker_ecf45f3145964fce989635dc236ee897.bindPopup(popup_0ed6acc30304452096f2f1f8a22ea117)
+        ;
+
+        
+    
+    
+            marker_ecf45f3145964fce989635dc236ee897.bindTooltip(
+                `<div>
+                     07381600
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b25614bff5064627ad7eea4f75346ac0 = L.marker(
+                [29.419445037841797, -91.27694702148438],
+                {}
+            ).addTo(map_e0ee834957c343c6b740291cdb753cf2);
+        
+    
+            var icon_1b1ca573add3484a99fb27aadf2e8901 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b25614bff5064627ad7eea4f75346ac0.setIcon(icon_1b1ca573add3484a99fb27aadf2e8901);
+        
+    
+        var popup_5104e333f9bd458290d08ab7dea7be95 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_c1844cce4d2f48768507e947cb423432 = $(`<div id="html_c1844cce4d2f48768507e947cb423432" style="width: 100.0%; height: 100.0%;"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> <html> <body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><p align="center" style="margin-bottom: 0in; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>073816537</b></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Coordinates:</b><span style="font-weight: normal"> 29.419447 , -91.27695</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Max Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">6,340.0 cfs on 2002-12-31 17:15:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Min Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">-223.0 cfs on 2002-09-07 13:00:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Basin: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Atchafalaya </span></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/raw/08080101_Atchafalaya/073816537.txt", target="_blank">Raw Data</a></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/processed/08080101_Atchafalaya/073816537.csv", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt">Processed Data</font></font></a></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><a href="http://htmlpreview.github.io/?https://github.com/sinaamini11/Louisiana_Region5_Discharges/blob/main/plots/08080101_Atchafalaya/073816537.html", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Plot</span></font></font></a></p> </body> </html> </div>`)[0];
+            popup_5104e333f9bd458290d08ab7dea7be95.setContent(html_c1844cce4d2f48768507e947cb423432);
+        
+
+        marker_b25614bff5064627ad7eea4f75346ac0.bindPopup(popup_5104e333f9bd458290d08ab7dea7be95)
+        ;
+
+        
+    
+    
+            marker_b25614bff5064627ad7eea4f75346ac0.bindTooltip(
+                `<div>
+                     073816537
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa62537e226e42a28ed75476eab47527 = L.marker(
+                [29.68083381652832, -91.4705581665039],
+                {}
+            ).addTo(map_e0ee834957c343c6b740291cdb753cf2);
+        
+    
+            var icon_696f2c180ccb40e3a83d3e43413772b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_aa62537e226e42a28ed75476eab47527.setIcon(icon_696f2c180ccb40e3a83d3e43413772b5);
+        
+    
+        var popup_a488058d5a814190a814d6b6a74e865f = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_279f4eaa26854c398f0459e5c85cd54b = $(`<div id="html_279f4eaa26854c398f0459e5c85cd54b" style="width: 100.0%; height: 100.0%;"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> <html> <body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><p align="center" style="margin-bottom: 0in; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>07381670</b></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Coordinates:</b><span style="font-weight: normal"> 29.680834 , -91.47056</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Max Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">35,800.0 cfs on 2019-07-13 20:00:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Min Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">-11,600.0 cfs on 2002-10-04 04:15:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Basin: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Atchafalaya </span></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/raw/08080101_Atchafalaya/07381670.txt", target="_blank">Raw Data</a></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/processed/08080101_Atchafalaya/07381670.csv", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt">Processed Data</font></font></a></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><a href="http://htmlpreview.github.io/?https://github.com/sinaamini11/Louisiana_Region5_Discharges/blob/main/plots/08080101_Atchafalaya/07381670.html", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Plot</span></font></font></a></p> </body> </html> </div>`)[0];
+            popup_a488058d5a814190a814d6b6a74e865f.setContent(html_279f4eaa26854c398f0459e5c85cd54b);
+        
+
+        marker_aa62537e226e42a28ed75476eab47527.bindPopup(popup_a488058d5a814190a814d6b6a74e865f)
+        ;
+
+        
+    
+    
+            marker_aa62537e226e42a28ed75476eab47527.bindTooltip(
+                `<div>
+                     07381670
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_98fbb7dced494c6daa3b5ca23f0552f8 = L.marker(
+                [29.771041870117188, -91.80011749267578],
+                {}
+            ).addTo(map_e0ee834957c343c6b740291cdb753cf2);
+        
+    
+            var icon_d660fa056e04432f9b270ab07a77b8b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_98fbb7dced494c6daa3b5ca23f0552f8.setIcon(icon_d660fa056e04432f9b270ab07a77b8b8);
+        
+    
+        var popup_5e62d0c81ea84c9ab78de15b0755dc98 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_27c9c5ab361e4ab5a91d0d7dba17c776 = $(`<div id="html_27c9c5ab361e4ab5a91d0d7dba17c776" style="width: 100.0%; height: 100.0%;"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> <html> <body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><p align="center" style="margin-bottom: 0in; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>07381695</b></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Coordinates:</b><span style="font-weight: normal"> 29.771042 , -91.80012</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Max Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">11,500.0 cfs on 1999-06-15 12:15:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Min Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">-7,110.0 cfs on 1999-10-09 02:00:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Basin: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Vermilion </span></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/raw/08080103_Vermilion/07381695.txt", target="_blank">Raw Data</a></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/processed/08080103_Vermilion/07381695.csv", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt">Processed Data</font></font></a></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><a href="http://htmlpreview.github.io/?https://github.com/sinaamini11/Louisiana_Region5_Discharges/blob/main/plots/08080103_Vermilion/07381695.html", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Plot</span></font></font></a></p> </body> </html> </div>`)[0];
+            popup_5e62d0c81ea84c9ab78de15b0755dc98.setContent(html_27c9c5ab361e4ab5a91d0d7dba17c776);
+        
+
+        marker_98fbb7dced494c6daa3b5ca23f0552f8.bindPopup(popup_5e62d0c81ea84c9ab78de15b0755dc98)
+        ;
+
+        
+    
+    
+            marker_98fbb7dced494c6daa3b5ca23f0552f8.bindTooltip(
+                `<div>
+                     07381695
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9000a00f6b744de1b8c5b5b6fa233de0 = L.marker(
+                [31.00027847290039, -92.38027954101562],
+                {}
+            ).addTo(map_e0ee834957c343c6b740291cdb753cf2);
+        
+    
+            var icon_095568af61184ef1b9f5fbc2d7815549 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9000a00f6b744de1b8c5b5b6fa233de0.setIcon(icon_095568af61184ef1b9f5fbc2d7815549);
+        
+    
+        var popup_6fb56438ae7343838a276ceb7fb54a96 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_554073f71c8b44a98481f122318918d1 = $(`<div id="html_554073f71c8b44a98481f122318918d1" style="width: 100.0%; height: 100.0%;"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> <html> <body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><p align="center" style="margin-bottom: 0in; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>07382000</b></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Coordinates:</b><span style="font-weight: normal"> 31.000278 , -92.38028</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Max Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">9,520.0 cfs on 2020-10-11 13:30:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Min Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">0.800000011920929 cfs on 1999-11-25 09:00:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Basin: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Bayou Teche </span></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/raw/08080102_Bayou_Teche/07382000.txt", target="_blank">Raw Data</a></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/processed/08080102_Bayou_Teche/07382000.csv", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt">Processed Data</font></font></a></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><a href="http://htmlpreview.github.io/?https://github.com/sinaamini11/Louisiana_Region5_Discharges/blob/main/plots/08080102_Bayou_Teche/07382000.html", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Plot</span></font></font></a></p> </body> </html> </div>`)[0];
+            popup_6fb56438ae7343838a276ceb7fb54a96.setContent(html_554073f71c8b44a98481f122318918d1);
+        
+
+        marker_9000a00f6b744de1b8c5b5b6fa233de0.bindPopup(popup_6fb56438ae7343838a276ceb7fb54a96)
+        ;
+
+        
+    
+    
+            marker_9000a00f6b744de1b8c5b5b6fa233de0.bindTooltip(
+                `<div>
+                     07382000
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d54071fada8e4ec2b5edcde271f39d0b = L.marker(
+                [30.61825180053711, -92.05567169189453],
+                {}
+            ).addTo(map_e0ee834957c343c6b740291cdb753cf2);
+        
+    
+            var icon_036b602f7e6d45b688224832238bee77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d54071fada8e4ec2b5edcde271f39d0b.setIcon(icon_036b602f7e6d45b688224832238bee77);
+        
+    
+        var popup_b5388ba276e14d368ab4a8f5e4e6a985 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_98451a71d902431a81f957c487090dba = $(`<div id="html_98451a71d902431a81f957c487090dba" style="width: 100.0%; height: 100.0%;"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> <html> <body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><p align="center" style="margin-bottom: 0in; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>07382500</b></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Coordinates:</b><span style="font-weight: normal"> 30.618252 , -92.05567</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Max Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">7,630.0 cfs on 2017-05-08 16:06:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Min Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">-536.0 cfs on 2004-04-30 20:45:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Basin: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Bayou Teche </span></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/raw/08080102_Bayou_Teche/07382500.txt", target="_blank">Raw Data</a></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/processed/08080102_Bayou_Teche/07382500.csv", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt">Processed Data</font></font></a></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><a href="http://htmlpreview.github.io/?https://github.com/sinaamini11/Louisiana_Region5_Discharges/blob/main/plots/08080102_Bayou_Teche/07382500.html", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Plot</span></font></font></a></p> </body> </html> </div>`)[0];
+            popup_b5388ba276e14d368ab4a8f5e4e6a985.setContent(html_98451a71d902431a81f957c487090dba);
+        
+
+        marker_d54071fada8e4ec2b5edcde271f39d0b.bindPopup(popup_b5388ba276e14d368ab4a8f5e4e6a985)
+        ;
+
+        
+    
+    
+            marker_d54071fada8e4ec2b5edcde271f39d0b.bindTooltip(
+                `<div>
+                     07382500
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c6731ee520e4cb8b98fcd2cb6e4be34 = L.marker(
+                [31.03324317932129, -91.98262023925781],
+                {}
+            ).addTo(map_e0ee834957c343c6b740291cdb753cf2);
+        
+    
+            var icon_75fbeed57bb14710ab3af6ddd127883a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2c6731ee520e4cb8b98fcd2cb6e4be34.setIcon(icon_75fbeed57bb14710ab3af6ddd127883a);
+        
+    
+        var popup_74bd0903b805414f92807b94726b58a8 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_c259d24ba0cc4df1ae0264ad925f5fb4 = $(`<div id="html_c259d24ba0cc4df1ae0264ad925f5fb4" style="width: 100.0%; height: 100.0%;"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> <html> <body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><p align="center" style="margin-bottom: 0in; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>07383500</b></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Coordinates:</b><span style="font-weight: normal"> 31.033243 , -91.98262</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Max Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">2,530.0 cfs on 2012-02-19 13:00:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Min Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">-999,999.0 cfs on 2020-12-23 11:00:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Basin: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Bayou Teche </span></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/raw/08080102_Bayou_Teche/07383500.txt", target="_blank">Raw Data</a></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/processed/08080102_Bayou_Teche/07383500.csv", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt">Processed Data</font></font></a></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><a href="http://htmlpreview.github.io/?https://github.com/sinaamini11/Louisiana_Region5_Discharges/blob/main/plots/08080102_Bayou_Teche/07383500.html", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Plot</span></font></font></a></p> </body> </html> </div>`)[0];
+            popup_74bd0903b805414f92807b94726b58a8.setContent(html_c259d24ba0cc4df1ae0264ad925f5fb4);
+        
+
+        marker_2c6731ee520e4cb8b98fcd2cb6e4be34.bindPopup(popup_74bd0903b805414f92807b94726b58a8)
+        ;
+
+        
+    
+    
+            marker_2c6731ee520e4cb8b98fcd2cb6e4be34.bindTooltip(
+                `<div>
+                     07383500
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a4b9e8dbf760498993c603ef0614f6d9 = L.marker(
+                [30.397418975830078, -91.93067169189453],
+                {}
+            ).addTo(map_e0ee834957c343c6b740291cdb753cf2);
+        
+    
+            var icon_cdd45f1130f74e3685ad82afb6d870e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a4b9e8dbf760498993c603ef0614f6d9.setIcon(icon_cdd45f1130f74e3685ad82afb6d870e8);
+        
+    
+        var popup_a407af0c07c64fe6bf83fdf96d3f975a = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_3c74719a56934fb8adfe1a3fa67aef05 = $(`<div id="html_3c74719a56934fb8adfe1a3fa67aef05" style="width: 100.0%; height: 100.0%;"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> <html> <body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><p align="center" style="margin-bottom: 0in; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>07385500</b></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Coordinates:</b><span style="font-weight: normal"> 30.397417 , -91.93067</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Max Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">2,780.0 cfs on 2003-02-21 20:00:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Min Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">497.0 cfs on 2002-12-31 04:00:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Basin: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Bayou Teche </span></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/raw/08080102_Bayou_Teche/07385500.txt", target="_blank">Raw Data</a></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/processed/08080102_Bayou_Teche/07385500.csv", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt">Processed Data</font></font></a></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><a href="http://htmlpreview.github.io/?https://github.com/sinaamini11/Louisiana_Region5_Discharges/blob/main/plots/08080102_Bayou_Teche/07385500.html", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Plot</span></font></font></a></p> </body> </html> </div>`)[0];
+            popup_a407af0c07c64fe6bf83fdf96d3f975a.setContent(html_3c74719a56934fb8adfe1a3fa67aef05);
+        
+
+        marker_a4b9e8dbf760498993c603ef0614f6d9.bindPopup(popup_a407af0c07c64fe6bf83fdf96d3f975a)
+        ;
+
+        
+    
+    
+            marker_a4b9e8dbf760498993c603ef0614f6d9.bindTooltip(
+                `<div>
+                     07385500
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d346f1f76e114e53a59672031bff7ecf = L.marker(
+                [30.071035385131836, -91.82928466796875],
+                {}
+            ).addTo(map_e0ee834957c343c6b740291cdb753cf2);
+        
+    
+            var icon_1ae3b7d046434afc8ee61a629b2aabfd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d346f1f76e114e53a59672031bff7ecf.setIcon(icon_1ae3b7d046434afc8ee61a629b2aabfd);
+        
+    
+        var popup_51b27acc0de2495b910ed45d1377c90a = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_31e920834ca24e639507e1cb60699595 = $(`<div id="html_31e920834ca24e639507e1cb60699595" style="width: 100.0%; height: 100.0%;"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> <html> <body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><p align="center" style="margin-bottom: 0in; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>07385700</b></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Coordinates:</b><span style="font-weight: normal"> 30.071035 , -91.829285</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Max Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">2,490.0 cfs on 2019-06-06 17:00:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Min Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">183.0 cfs on 2018-12-26 11:00:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Basin: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Bayou Teche </span></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/raw/08080102_Bayou_Teche/07385700.txt", target="_blank">Raw Data</a></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/processed/08080102_Bayou_Teche/07385700.csv", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt">Processed Data</font></font></a></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><a href="http://htmlpreview.github.io/?https://github.com/sinaamini11/Louisiana_Region5_Discharges/blob/main/plots/08080102_Bayou_Teche/07385700.html", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Plot</span></font></font></a></p> </body> </html> </div>`)[0];
+            popup_51b27acc0de2495b910ed45d1377c90a.setContent(html_31e920834ca24e639507e1cb60699595);
+        
+
+        marker_d346f1f76e114e53a59672031bff7ecf.bindPopup(popup_51b27acc0de2495b910ed45d1377c90a)
+        ;
+
+        
+    
+    
+            marker_d346f1f76e114e53a59672031bff7ecf.bindTooltip(
+                `<div>
+                     07385700
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a72d649b7ed940239e7ea477869213f5 = L.marker(
+                [29.879371643066406, -91.58622741699219],
+                {}
+            ).addTo(map_e0ee834957c343c6b740291cdb753cf2);
+        
+    
+            var icon_cdf65a3ca725464ba3aecd6106a1ff80 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a72d649b7ed940239e7ea477869213f5.setIcon(icon_cdf65a3ca725464ba3aecd6106a1ff80);
+        
+    
+        var popup_89098c40e958466ba359b0c14d035d68 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_b9f1ab11e561452e92c57daf7902c669 = $(`<div id="html_b9f1ab11e561452e92c57daf7902c669" style="width: 100.0%; height: 100.0%;"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> <html> <body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><p align="center" style="margin-bottom: 0in; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>07385765</b></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Coordinates:</b><span style="font-weight: normal"> 29.879372 , -91.58623</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Max Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">5,450.0 cfs on 2016-08-13 20:30:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Min Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">-46,500.0 cfs on 2021-01-27 16:15:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Basin: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Bayou Teche </span></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/raw/08080102_Bayou_Teche/07385765.txt", target="_blank">Raw Data</a></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/processed/08080102_Bayou_Teche/07385765.csv", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt">Processed Data</font></font></a></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><a href="http://htmlpreview.github.io/?https://github.com/sinaamini11/Louisiana_Region5_Discharges/blob/main/plots/08080102_Bayou_Teche/07385765.html", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Plot</span></font></font></a></p> </body> </html> </div>`)[0];
+            popup_89098c40e958466ba359b0c14d035d68.setContent(html_b9f1ab11e561452e92c57daf7902c669);
+        
+
+        marker_a72d649b7ed940239e7ea477869213f5.bindPopup(popup_89098c40e958466ba359b0c14d035d68)
+        ;
+
+        
+    
+    
+            marker_a72d649b7ed940239e7ea477869213f5.bindTooltip(
+                `<div>
+                     07385765
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b68b487dacd4ea1bbba3a1bdaba9144 = L.marker(
+                [29.823055267333984, -91.54166412353516],
+                {}
+            ).addTo(map_e0ee834957c343c6b740291cdb753cf2);
+        
+    
+            var icon_8bb9a6c4f13f40b2bec1fb466affb7ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9b68b487dacd4ea1bbba3a1bdaba9144.setIcon(icon_8bb9a6c4f13f40b2bec1fb466affb7ca);
+        
+    
+        var popup_36f35bad228f4bdc992f756b9f31c36b = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_18e4ece86eb64bf2a0fcdc83c62e9342 = $(`<div id="html_18e4ece86eb64bf2a0fcdc83c62e9342" style="width: 100.0%; height: 100.0%;"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> <html> <body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><p align="center" style="margin-bottom: 0in; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>07385790</b></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Coordinates:</b><span style="font-weight: normal"> 29.823055 , -91.541664</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Max Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">20,600.0 cfs on 2013-01-16 11:30:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Min Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">-37,200.0 cfs on 2005-09-24 11:15:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Basin: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Vermilion </span></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/raw/08080103_Vermilion/07385790.txt", target="_blank">Raw Data</a></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/processed/08080103_Vermilion/07385790.csv", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt">Processed Data</font></font></a></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><a href="http://htmlpreview.github.io/?https://github.com/sinaamini11/Louisiana_Region5_Discharges/blob/main/plots/08080103_Vermilion/07385790.html", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Plot</span></font></font></a></p> </body> </html> </div>`)[0];
+            popup_36f35bad228f4bdc992f756b9f31c36b.setContent(html_18e4ece86eb64bf2a0fcdc83c62e9342);
+        
+
+        marker_9b68b487dacd4ea1bbba3a1bdaba9144.bindPopup(popup_36f35bad228f4bdc992f756b9f31c36b)
+        ;
+
+        
+    
+    
+            marker_9b68b487dacd4ea1bbba3a1bdaba9144.bindTooltip(
+                `<div>
+                     07385790
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e282511492134f7ba43f78046609658a = L.marker(
+                [30.3988094329834, -91.94483947753906],
+                {}
+            ).addTo(map_e0ee834957c343c6b740291cdb753cf2);
+        
+    
+            var icon_6e51807e496e43af8f0c53f8b97502e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e282511492134f7ba43f78046609658a.setIcon(icon_6e51807e496e43af8f0c53f8b97502e0);
+        
+    
+        var popup_0f918c65450d402090e0abb54f19baef = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_de3430266146404092906a9f422e9939 = $(`<div id="html_de3430266146404092906a9f422e9939" style="width: 100.0%; height: 100.0%;"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> <html> <body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><p align="center" style="margin-bottom: 0in; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>07386200</b></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Coordinates:</b><span style="font-weight: normal"> 30.39881 , -91.94484</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Max Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">878.0 cfs on 2005-09-25 04:00:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Min Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">123.0 cfs on 2003-12-10 19:00:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Basin: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Vermilion </span></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/raw/08080103_Vermilion/07386200.txt", target="_blank">Raw Data</a></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/processed/08080103_Vermilion/07386200.csv", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt">Processed Data</font></font></a></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><a href="http://htmlpreview.github.io/?https://github.com/sinaamini11/Louisiana_Region5_Discharges/blob/main/plots/08080103_Vermilion/07386200.html", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Plot</span></font></font></a></p> </body> </html> </div>`)[0];
+            popup_0f918c65450d402090e0abb54f19baef.setContent(html_de3430266146404092906a9f422e9939);
+        
+
+        marker_e282511492134f7ba43f78046609658a.bindPopup(popup_0f918c65450d402090e0abb54f19baef)
+        ;
+
+        
+    
+    
+            marker_e282511492134f7ba43f78046609658a.bindTooltip(
+                `<div>
+                     07386200
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3893a3224aad4b8cb3e67382046f853b = L.marker(
+                [30.217422485351562, -91.9928970336914],
+                {}
+            ).addTo(map_e0ee834957c343c6b740291cdb753cf2);
+        
+    
+            var icon_f11e951dbda64a9e93f32609253a43e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3893a3224aad4b8cb3e67382046f853b.setIcon(icon_f11e951dbda64a9e93f32609253a43e7);
+        
+    
+        var popup_9c04954af0ea43079c3191e530bd77b5 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_17ad3f36199244afb99174b5141e67cd = $(`<div id="html_17ad3f36199244afb99174b5141e67cd" style="width: 100.0%; height: 100.0%;"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> <html> <body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><p align="center" style="margin-bottom: 0in; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>07386880</b></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Coordinates:</b><span style="font-weight: normal"> 30.217422 , -91.9929</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Max Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">5,260.0 cfs on 2016-08-21 12:00:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Min Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">-11,300.0 cfs on 2016-08-13 16:45:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Basin: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Vermilion </span></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/raw/08080103_Vermilion/07386880.txt", target="_blank">Raw Data</a></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/processed/08080103_Vermilion/07386880.csv", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt">Processed Data</font></font></a></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><a href="http://htmlpreview.github.io/?https://github.com/sinaamini11/Louisiana_Region5_Discharges/blob/main/plots/08080103_Vermilion/07386880.html", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Plot</span></font></font></a></p> </body> </html> </div>`)[0];
+            popup_9c04954af0ea43079c3191e530bd77b5.setContent(html_17ad3f36199244afb99174b5141e67cd);
+        
+
+        marker_3893a3224aad4b8cb3e67382046f853b.bindPopup(popup_9c04954af0ea43079c3191e530bd77b5)
+        ;
+
+        
+    
+    
+            marker_3893a3224aad4b8cb3e67382046f853b.bindTooltip(
+                `<div>
+                     07386880
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_04032f89a4c54b4aa20a20419fdaff6e = L.marker(
+                [29.95111083984375, -92.15636444091797],
+                {}
+            ).addTo(map_e0ee834957c343c6b740291cdb753cf2);
+        
+    
+            var icon_780a980ed2434a35a6c7320dd89dc9d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_04032f89a4c54b4aa20a20419fdaff6e.setIcon(icon_780a980ed2434a35a6c7320dd89dc9d3);
+        
+    
+        var popup_4961246f65a64337a54872ba939fbdea = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_04aef18c197d45c5bf86d6f8d147ffac = $(`<div id="html_04aef18c197d45c5bf86d6f8d147ffac" style="width: 100.0%; height: 100.0%;"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> <html> <body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><p align="center" style="margin-bottom: 0in; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>07386980</b></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Coordinates:</b><span style="font-weight: normal"> 29.95111 , -92.156364</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Max Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">15,400.0 cfs on 2016-08-14 17:30:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Min Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">-999,999.0 cfs on 2021-01-24 17:45:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Basin: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Vermilion </span></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/raw/08080103_Vermilion/07386980.txt", target="_blank">Raw Data</a></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/processed/08080103_Vermilion/07386980.csv", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt">Processed Data</font></font></a></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><a href="http://htmlpreview.github.io/?https://github.com/sinaamini11/Louisiana_Region5_Discharges/blob/main/plots/08080103_Vermilion/07386980.html", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Plot</span></font></font></a></p> </body> </html> </div>`)[0];
+            popup_4961246f65a64337a54872ba939fbdea.setContent(html_04aef18c197d45c5bf86d6f8d147ffac);
+        
+
+        marker_04032f89a4c54b4aa20a20419fdaff6e.bindPopup(popup_4961246f65a64337a54872ba939fbdea)
+        ;
+
+        
+    
+    
+            marker_04032f89a4c54b4aa20a20419fdaff6e.bindTooltip(
+                `<div>
+                     07386980
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f21371416f6d4627a34f884ce9d47d03 = L.marker(
+                [30.48288917541504, -92.49069213867188],
+                {}
+            ).addTo(map_e0ee834957c343c6b740291cdb753cf2);
+        
+    
+            var icon_4754aa032e544d47992fa249c6821028 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f21371416f6d4627a34f884ce9d47d03.setIcon(icon_4754aa032e544d47992fa249c6821028);
+        
+    
+        var popup_942cde109fb142888490de2357fff2e9 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_890aca51922a44fbbb320aedc19ca2a3 = $(`<div id="html_890aca51922a44fbbb320aedc19ca2a3" style="width: 100.0%; height: 100.0%;"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> <html> <body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><p align="center" style="margin-bottom: 0in; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>08010000</b></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Coordinates:</b><span style="font-weight: normal"> 30.48289 , -92.4907</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Max Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">11,900.0 cfs on 2016-08-16 05:00:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Min Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">0.009999999776482582 cfs on 2018-08-25 07:00:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Basin: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Mermentau Headwaters </span></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/raw/08080201_Mermentau_Headwaters/08010000.txt", target="_blank">Raw Data</a></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/processed/08080201_Mermentau_Headwaters/08010000.csv", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt">Processed Data</font></font></a></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><a href="http://htmlpreview.github.io/?https://github.com/sinaamini11/Louisiana_Region5_Discharges/blob/main/plots/08080201_Mermentau_Headwaters/08010000.html", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Plot</span></font></font></a></p> </body> </html> </div>`)[0];
+            popup_942cde109fb142888490de2357fff2e9.setContent(html_890aca51922a44fbbb320aedc19ca2a3);
+        
+
+        marker_f21371416f6d4627a34f884ce9d47d03.bindPopup(popup_942cde109fb142888490de2357fff2e9)
+        ;
+
+        
+    
+    
+            marker_f21371416f6d4627a34f884ce9d47d03.bindTooltip(
+                `<div>
+                     08010000
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ee4826ae5caa44fdabf7b2efb3f390c8 = L.marker(
+                [30.410476684570312, -92.21707153320312],
+                {}
+            ).addTo(map_e0ee834957c343c6b740291cdb753cf2);
+        
+    
+            var icon_61817b7d6c5343c7ad794118592bf370 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ee4826ae5caa44fdabf7b2efb3f390c8.setIcon(icon_61817b7d6c5343c7ad794118592bf370);
+        
+    
+        var popup_01f38d34817843d68dcb31ad27f9429f = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_ff256f6eafb74ed8944729c89e17bcc0 = $(`<div id="html_ff256f6eafb74ed8944729c89e17bcc0" style="width: 100.0%; height: 100.0%;"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> <html> <body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><p align="center" style="margin-bottom: 0in; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>08010200</b></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Coordinates:</b><span style="font-weight: normal"> 30.410477 , -92.21707</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Max Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">26.0 cfs on 2004-05-13 03:30:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Min Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">3.5 cfs on 2002-05-17 10:30:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Basin: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Mermentau Headwaters </span></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/raw/08080201_Mermentau_Headwaters/08010200.txt", target="_blank">Raw Data</a></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/processed/08080201_Mermentau_Headwaters/08010200.csv", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt">Processed Data</font></font></a></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><a href="http://htmlpreview.github.io/?https://github.com/sinaamini11/Louisiana_Region5_Discharges/blob/main/plots/08080201_Mermentau_Headwaters/08010200.html", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Plot</span></font></font></a></p> </body> </html> </div>`)[0];
+            popup_01f38d34817843d68dcb31ad27f9429f.setContent(html_ff256f6eafb74ed8944729c89e17bcc0);
+        
+
+        marker_ee4826ae5caa44fdabf7b2efb3f390c8.bindPopup(popup_01f38d34817843d68dcb31ad27f9429f)
+        ;
+
+        
+    
+    
+            marker_ee4826ae5caa44fdabf7b2efb3f390c8.bindTooltip(
+                `<div>
+                     08010200
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f588299965c04fc6a87846aab9770be6 = L.marker(
+                [30.480777740478516, -92.63175201416016],
+                {}
+            ).addTo(map_e0ee834957c343c6b740291cdb753cf2);
+        
+    
+            var icon_21729cc9eb86452782a2b9bdc4e7c0c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f588299965c04fc6a87846aab9770be6.setIcon(icon_21729cc9eb86452782a2b9bdc4e7c0c3);
+        
+    
+        var popup_93e91427200e4c5b8db5ce65cadfa9b6 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_347db9d7fa1444749699b52496fed71e = $(`<div id="html_347db9d7fa1444749699b52496fed71e" style="width: 100.0%; height: 100.0%;"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> <html> <body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><p align="center" style="margin-bottom: 0in; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>08012000</b></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Coordinates:</b><span style="font-weight: normal"> 30.480778 , -92.63175</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Max Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">17,700.0 cfs on 2017-05-05 16:15:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Min Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">1.2200000286102295 cfs on 2015-10-17 08:00:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Basin: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Mermentau Headwaters </span></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/raw/08080201_Mermentau_Headwaters/08012000.txt", target="_blank">Raw Data</a></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/processed/08080201_Mermentau_Headwaters/08012000.csv", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt">Processed Data</font></font></a></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><a href="http://htmlpreview.github.io/?https://github.com/sinaamini11/Louisiana_Region5_Discharges/blob/main/plots/08080201_Mermentau_Headwaters/08012000.html", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Plot</span></font></font></a></p> </body> </html> </div>`)[0];
+            popup_93e91427200e4c5b8db5ce65cadfa9b6.setContent(html_347db9d7fa1444749699b52496fed71e);
+        
+
+        marker_f588299965c04fc6a87846aab9770be6.bindPopup(popup_93e91427200e4c5b8db5ce65cadfa9b6)
+        ;
+
+        
+    
+    
+            marker_f588299965c04fc6a87846aab9770be6.bindTooltip(
+                `<div>
+                     08012000
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_159d8dd118be45e0997d34ca0d750388 = L.marker(
+                [30.190000534057617, -92.5905532836914],
+                {}
+            ).addTo(map_e0ee834957c343c6b740291cdb753cf2);
+        
+    
+            var icon_60c66568bc26456baf6d199df1eab56f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_159d8dd118be45e0997d34ca0d750388.setIcon(icon_60c66568bc26456baf6d199df1eab56f);
+        
+    
+        var popup_2acfe2c2f86b47fdaa6e3b56c0b5407d = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_71e7c77b66e44c2b91cbba360133afbe = $(`<div id="html_71e7c77b66e44c2b91cbba360133afbe" style="width: 100.0%; height: 100.0%;"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> <html> <body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><p align="center" style="margin-bottom: 0in; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>08012150</b></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Coordinates:</b><span style="font-weight: normal"> 30.19 , -92.59055</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Max Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">47,600.0 cfs on 2004-05-18 09:15:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Min Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">-8,620.0 cfs on 2020-08-27 10:30:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Basin: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Mermentau </span></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/raw/08080202_Mermentau/08012150.txt", target="_blank">Raw Data</a></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/processed/08080202_Mermentau/08012150.csv", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt">Processed Data</font></font></a></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><a href="http://htmlpreview.github.io/?https://github.com/sinaamini11/Louisiana_Region5_Discharges/blob/main/plots/08080202_Mermentau/08012150.html", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Plot</span></font></font></a></p> </body> </html> </div>`)[0];
+            popup_2acfe2c2f86b47fdaa6e3b56c0b5407d.setContent(html_71e7c77b66e44c2b91cbba360133afbe);
+        
+
+        marker_159d8dd118be45e0997d34ca0d750388.bindPopup(popup_2acfe2c2f86b47fdaa6e3b56c0b5407d)
+        ;
+
+        
+    
+    
+            marker_159d8dd118be45e0997d34ca0d750388.bindTooltip(
+                `<div>
+                     08012150
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e88476807af3448cab8995e88f2a0acb = L.marker(
+                [30.114648818969727, -92.32373809814453],
+                {}
+            ).addTo(map_e0ee834957c343c6b740291cdb753cf2);
+        
+    
+            var icon_b69401774ba244a5bd360f5ffba3441d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e88476807af3448cab8995e88f2a0acb.setIcon(icon_b69401774ba244a5bd360f5ffba3441d);
+        
+    
+        var popup_3e12d7d5f6194cd79ab8ddcb127fb6f6 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_5fd61d704ce74e76a94f7200b3c1014c = $(`<div id="html_5fd61d704ce74e76a94f7200b3c1014c" style="width: 100.0%; height: 100.0%;"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> <html> <body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><p align="center" style="margin-bottom: 0in; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>08012285</b></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Coordinates:</b><span style="font-weight: normal"> 30.114649 , -92.32374</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Max Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">2,710.0 cfs on 1997-02-14 08:30:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Min Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">-39.0 cfs on 1998-12-09 23:45:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Basin: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Mermentau </span></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/raw/08080202_Mermentau/08012285.txt", target="_blank">Raw Data</a></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/processed/08080202_Mermentau/08012285.csv", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt">Processed Data</font></font></a></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><a href="http://htmlpreview.github.io/?https://github.com/sinaamini11/Louisiana_Region5_Discharges/blob/main/plots/08080202_Mermentau/08012285.html", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Plot</span></font></font></a></p> </body> </html> </div>`)[0];
+            popup_3e12d7d5f6194cd79ab8ddcb127fb6f6.setContent(html_5fd61d704ce74e76a94f7200b3c1014c);
+        
+
+        marker_e88476807af3448cab8995e88f2a0acb.bindPopup(popup_3e12d7d5f6194cd79ab8ddcb127fb6f6)
+        ;
+
+        
+    
+    
+            marker_e88476807af3448cab8995e88f2a0acb.bindTooltip(
+                `<div>
+                     08012285
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d44c79786237425cbca9ede5b16de3bb = L.marker(
+                [30.081527709960938, -92.5064697265625],
+                {}
+            ).addTo(map_e0ee834957c343c6b740291cdb753cf2);
+        
+    
+            var icon_939132b52c054b469c692951ea10ee30 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d44c79786237425cbca9ede5b16de3bb.setIcon(icon_939132b52c054b469c692951ea10ee30);
+        
+    
+        var popup_0d79287ee99542109d660169d756ddbf = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_f3291cdb12894c8fa90f5d02688aa493 = $(`<div id="html_f3291cdb12894c8fa90f5d02688aa493" style="width: 100.0%; height: 100.0%;"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> <html> <body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><p align="center" style="margin-bottom: 0in; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>08012300</b></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Coordinates:</b><span style="font-weight: normal"> 30.081528 , -92.50647</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Max Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">257.0 cfs on 1999-06-01 22:30:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Min Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">85.0 cfs on 1999-05-31 05:00:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Basin: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Mermentau </span></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/raw/08080202_Mermentau/08012300.txt", target="_blank">Raw Data</a></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/processed/08080202_Mermentau/08012300.csv", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt">Processed Data</font></font></a></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><a href="http://htmlpreview.github.io/?https://github.com/sinaamini11/Louisiana_Region5_Discharges/blob/main/plots/08080202_Mermentau/08012300.html", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Plot</span></font></font></a></p> </body> </html> </div>`)[0];
+            popup_0d79287ee99542109d660169d756ddbf.setContent(html_f3291cdb12894c8fa90f5d02688aa493);
+        
+
+        marker_d44c79786237425cbca9ede5b16de3bb.bindPopup(popup_0d79287ee99542109d660169d756ddbf)
+        ;
+
+        
+    
+    
+            marker_d44c79786237425cbca9ede5b16de3bb.bindTooltip(
+                `<div>
+                     08012300
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8645ec298292482e90432bb336f96f96 = L.marker(
+                [30.06999969482422, -92.87886047363281],
+                {}
+            ).addTo(map_e0ee834957c343c6b740291cdb753cf2);
+        
+    
+            var icon_6702d0d260da49c3bc76a553886190b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8645ec298292482e90432bb336f96f96.setIcon(icon_6702d0d260da49c3bc76a553886190b6);
+        
+    
+        var popup_a468068a7f9847c9a4c71d35b8f1ee5c = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_31240b3f5dc44fddb40f57d767f71452 = $(`<div id="html_31240b3f5dc44fddb40f57d767f71452" style="width: 100.0%; height: 100.0%;"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> <html> <body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><p align="center" style="margin-bottom: 0in; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>08012470</b></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Coordinates:</b><span style="font-weight: normal"> 30.07 , -92.87886</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Max Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">8,280.0 cfs on 2002-10-30 19:45:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Min Level: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">-3,660.0 cfs on 2005-09-24 09:15:00</span></font></font></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><b>Basin: </b></font></font><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Mermentau </span></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/raw/08080202_Mermentau/08012470.txt", target="_blank">Raw Data</a></font></font></p> <p align="left" style="margin-bottom: 0in; font-weight: normal; line-height: 100%"> <a href="https://raw.githubusercontent.com/sinaamini11/Louisiana_Region5_Discharges/main/processed/08080202_Mermentau/08012470.csv", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt">Processed Data</font></font></a></p> <p align="left" style="margin-bottom: 0in; line-height: 100%"><a href="http://htmlpreview.github.io/?https://github.com/sinaamini11/Louisiana_Region5_Discharges/blob/main/plots/08080202_Mermentau/08012470.html", target="_blank"><font face="arial, sans-serif"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">Plot</span></font></font></a></p> </body> </html> </div>`)[0];
+            popup_a468068a7f9847c9a4c71d35b8f1ee5c.setContent(html_31240b3f5dc44fddb40f57d767f71452);
+        
+
+        marker_8645ec298292482e90432bb336f96f96.bindPopup(popup_a468068a7f9847c9a4c71d35b8f1ee5c)
+        ;
+
+        
+    
+    
+            marker_8645ec298292482e90432bb336f96f96.bindTooltip(
+                `<div>
+                     08012470
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
